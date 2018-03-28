@@ -8,13 +8,10 @@ nameonly="${filename%.*}"
 
 case $extension in
     go)
-	gofmt -w $path
-        go test .
-	if [ $? == 0 ]; then
-	    go build -o tailacm/tailacm zwave/tailacm
-	    go build -o sendacm/sendacm zwave/sendacm
-	    killall tailacm
-	fi
+#	gofmt -w $path
         ;;
 esac
 
+go install github.com/gregoryv/zwave/cmd/tailacm
+go install github.com/gregoryv/zwave/cmd/sendacm
+go test .
