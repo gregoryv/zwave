@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"github.com/gregoryv/zwave"
+	"log"
 )
 
 func main() {
