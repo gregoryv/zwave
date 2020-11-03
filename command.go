@@ -4,28 +4,12 @@ import "fmt"
 
 type UnknownCommand []byte
 
-/*
- __  __       _ _   _ _                _
-|  \/  |_   _| | |_(_) | _____   _____| |
-| |\/| | | | | | __| | |/ _ \ \ / / _ \ |
-| |  | | |_| | | |_| | |  __/\ V /  __/ |
-|_|  |_|\__,_|_|\__|_|_|\___| \_/ \___|_|
-
-*/
 type SensorMultilevel []byte
 
 func (dat SensorMultilevel) String() string {
 	return fmt.Sprintf("Implement sensor multilevel: %v", []byte(dat))
 }
 
-/*
- _   _       _   _  __ _           _   _
-| \ | | ___ | |_(_)/ _(_) ___ __ _| |_(_) ___  _ __
-|  \| |/ _ \| __| | |_| |/ __/ _` | __| |/ _ \| '_ \
-| |\  | (_) | |_| |  _| | (_| (_| | |_| | (_) | | | |
-|_| \_|\___/ \__|_|_| |_|\___\__,_|\__|_|\___/|_| |_|
-
-*/
 type NotificationReport []byte
 
 func (dat NotificationReport) String() string {
